@@ -1,0 +1,38 @@
+
+@media only screen and (max-width: 480px) {
+    
+    body {
+      font-size: 14px;
+    }
+    
+    
+    .content {
+      padding: 5px;
+    }
+    
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    
+    
+}  
+
+@media screen and (max-width:768px) {
+  .content1{
+   text-align: center;
+   background-color: #4CAF50;
+   
+  }
+
+  .content2 {
+   width: 100%;
+}
+
+
+ 
+ 
+
+}
