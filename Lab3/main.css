@@ -3,8 +3,29 @@
         flex-wrap: wrap;
         text-align: center;
     }
-
-    .text{
-        flex-wrap: wrap;
+    
+    input{
+        margin-right: 91px;
     }
+
+   .d1{
+     margin-left: -170px;
+   }
+
+   p{
+    font-size: 12px;
+   }
+
+   b{
+     font-size: 14px;
+   }
+    
+      
+      
+    
 }
+
+p, b{
+    font-family: Arial, Helvetica, sans-serif
+}
+
