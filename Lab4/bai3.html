@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #BCE2C9;
+            margin: 0;
+        }
+
+        .header {
+            padding: 10px;
+            text-align: center;
+            background: white;
+            color: #36B87D;
+        }
+
+        .header h1 {
+            font-size: 40px;
+        }
+
+        .header p {
+            font-size: 20px;
+        }
+
+        .navbar-menu {
+            display: flex;
+            background-color: #36B87D;
+
+        }
+
+
+        .navbar-menu a {
+            color: #f2f2f2;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar-menu a:hover {
+            background-color: #0f7d4c;
+            color: white;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .side {
+            flex-basis: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+            
+        }
+
+        .main {
+            flex-basis: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .newimg {
+            width: 100%;
+            background-color: #BCE2C9;
+            padding: 20px;
+        }
+
+        .footer {
+            padding: 10px;
+            text-align: center;
+            background: white;
+            margin-top: 10px;
+        }
+
+        .Image {
+            height: 60px;
+            background-color: #BCE2C9;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .row,
+            .navbar {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+    <div class="header">
+        <h1>This is my first webpage</h1>
+        <p>Knowledge - Experience - FAQ</p>
+        <p>Using <b>flexible</b> layout.</p>
+    </div>
+
+    <div class="navbar-menu">
+        <a href="#">Home</a>
+        <a href="#">Technology</a>
+        <a href="#">Science</a>
+        <a href="#">Life</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>Introduce</h2>
+            <div class="Image" style="height: 200px;">Image</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Technology</h3>
+            <div class="Image">Image</div><br>
+            <div class="Image">Image</div><br>
+            <div class="Image">Image</div>
+            <h3>Follow Me</h3>
+            <p>Facebook</p>
+            <p>YouTube</p>
+        </div>
+        <div class="main">
+            <h2>Form CSS</h2>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="newimg" style="height: 200px;">Image</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper urna quis dui sollicitudin
+                gravida. Duis vel mauris aliquet, facilisis diam sit amet, egestas nunc. Integer quis eleifend urna, non
+                fringilla neque. </p> <br>
+            <h2>Attribute Selector in CSS</h2>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="newimg" style="height: 200px;">Image</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper urna quis dui sollicitudin
+                gravida. Duis vel mauris aliquet</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper urna quis dui sollicitudin
+                gravida. </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h4>&copy; Copyright by Nguyễn Duy Dũng </h4>
+    </div>
+    
+
+</body>
+
+</html>
