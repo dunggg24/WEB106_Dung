@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+
+    <style>
+        html {
+    /*font-size: 62.5%;*/
+    font-size: 80%;
+    box-sizing: border-box;
+}
+
+* {
+	font-family: Consolas, monospace;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: auto;
+    width: 460px;
+    box-shadow: 9px 8px #0002;
+}
+
+.calculator-screen {
+	font-size: 5rem;
+    width: 100%;
+    height: 80px;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+button {
+	outline: 0;
+    cursor: pointer;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    font-size: 2rem;
+    color: #333;
+    box-shadow: 4px 3px #0002;
+    transition-duration: .1s;
+    text-shadow: 0 1px rgba(255, 255, 255, .4);
+}
+
+button:hover {
+    background-color: #eaeaea;
+}
+
+button:active {
+	transition-duration: 0s;
+	box-shadow: none;
+}
+
+.operator {
+	font-size: 27px;
+	font-weight: bold;
+    color: #337cac;
+}
+.function {
+	font-style: italic;
+    color: #339cac;
+}
+.constant {
+	font-style: italic;
+    color: #999c2c;
+}
+
+.all-clear {
+    background-color: #f0595f;
+    border-color: #b0353a;
+    color: #fff;
+}
+
+.all-clear:hover {
+    background-color: #f17377;
+}
+
+.delete-sign {
+	background-color: #f0595f;
+    border-color: #b0353a;
+    color: #fff;
+}
+
+.delete-sign:hover {
+    background-color: #f17377;
+}
+
+
+
+.equal-sign {
+    background-color: #2e86c0;
+    border-color: #337cac;
+    color: #fff;
+}
+
+.equal-sign:hover {
+    background-color: #4e9ed4;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    padding: 15px;
+}
+
+.hiddenSmall {
+	font-size: 10px;
+	text-decoration: line-through;
+}
+    </style>
+    <div class="calculator">
+        <input type="text" class="calculator-screen" id="screen"/>
+        <div class="calculator-keys">
+
+        	<button title="Logarit" class="function" value="log(">AC</button>
+        	<button title="Logarit of e" class="function" value="ln(">+/-</button>
+        	<button title="Square Root - Căn bậc 2" class="function" value="&radic;(">&radic;</button>
+        	
+        	<button title="Sin (in radian)" class="function" value="sin(">Sin</button>
+        	<button title="Cos (in radian)" class="function" value="cos(">Cos</button>
+        	<button title="Tan (in radian)" class="function" value="tan(">Tan</button>
+        	<button title="Open bracket" class="operator" value="(">(</button>
+        	<button title="Close bracket" class="operator" value=")">)</button>
+
+            <button value="7">7</button>
+            <button value="8">8</button>
+            <button value="9">9</button>
+            <button title="Delete" class="delete-sign">DEL</button>
+            <button title="Clear" class="all-clear">AC</button>
+            
+            <button value="4">4</button>
+            <button value="5">5</button>
+            <button value="6">6</button>
+            <button class="operator" value="&times;">&times;</button>
+            <button class="operator" value="&divide;">&divide;</button>
+            
+            <button value="1">1</button>
+            <button value="2">2</button>
+            <button value="3">3</button>
+            <button class="operator" value="&plus;">&plus;</button>
+            <button class="operator" value="&minus;">&minus;</button>
+
+            <button value="0">0</button>
+            <button class="decimal" value=".">.</button>
+            <button title="Exponential" class="exp constant" value="E">exp</button>
+            <button title="Last ANSwer" class="ans-sign" value="Ans">Ans</button>
+            <button title="Calculate" class="equal-sign">=</button>
+
+        </div>
+    </div>
+</body>
+
+</html>

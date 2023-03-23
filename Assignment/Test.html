@@ -29,7 +29,7 @@
 
         img {
             width: 100%;
-            height: 422px;
+            height: 500px;
 
         }
 
@@ -37,29 +37,51 @@
             color: aquamarine;
         }
 
-        .menu1 div {
-        flex-basis: calc(50% - 10px);
-    }
+        .grid-container{
+            display: flex;
+            
+            padding: 10px;
+            justify-content: space-between;
+        }
 
+        .grid{
+            border: 1px solid ;
+            text-align: center;
+            padding: 20px;
+        }
+    
+        
         @media screen and (max-width:600px) {
             .menu {
                 flex-direction: column-reverse;
             }
 
-            .img {
-                width: 100%;
-                height: 200px;
+           .img{
+            
+            height: 200px;
+           }
+            h1{
+                font-size: 24px;
+            }
+
+            .grid-container{
+                flex-direction: column-reverse;
+            }
+            .img1{
+                width: 182px;
+                height: 182px;
             }
 
             
           
-            .menu1{
-                flex-wrap: wrap;
+            
+
             }
 
-       
-        }
+        
     </style>
+
+    <!--Menu-->
     <div class="menu">
         <a href="http://">DUNG MOBILE</a>
         <a href="http://">Iphone</a>
@@ -76,34 +98,56 @@
         </form>
     </div>
 
+            <!--Banner-->
     <div>
-        <img src="HTML5.webp" alt="" class="img">
+        <img src="/apple-recycling.png" alt="" class="img">
     </div>
-
-    <div>
-        <center>
+             
+          <!--Title-->
+    <div style="text-align: center; margin: 10px;">
+       
          <h1>Iphone</h1>
-        </center>
+        
     </div>
 
-    <div style="display: flex; justify-content: space-around;" class="menu1"> 
-        <div>
-            <img src="/Assignment/iphone-13-starlight-1-600x600.jpg" alt="" style="width:200px ; height: 200px;">
+    <!--Content-->
+
+    <div class="grid-container">
+        
+        <div class="grid">
+           <img src="/Assignment/iphone-13-starlight-1-600x600.jpg" alt="" class="img1">
+          <h2>Iphone 14</h2>
+          <p>22.000.000</p>
 
         </div>
 
-        <div>
-            <img src="/Assignment/iphone-13-starlight-1-600x600.jpg" alt="" style="width:200px ; height: 200px;">
+
+        <div class="grid">
+           <img src="/Assignment/iphone-13-starlight-1-600x600.jpg" alt="" style="width: 250px; height: 250px;" class="img1">
+           <h2>Iphone 14</h2>
+          <p>22.000.000</p>
         </div>
 
-        <div>
-            <img src="/Assignment/iphone-13-starlight-1-600x600.jpg" alt="" style="width:200px ; height: 200px;">
+
+        <div class="grid">
+              <img src="/Assignment/iphone-13-starlight-1-600x600.jpg" alt="" style="width: 250px; height: 250px;" class="img1">
+              <h2>Iphone 14</h2>
+          <p>22.000.000</p>
+
         </div>
 
 
-
+        <div class="grid">
+            <img src="/Assignment/iphone-13-starlight-1-600x600.jpg" alt="" style="width: 250px; height: 250px;" class="img1">
+            <h2>Iphone 14</h2>
+          <p>22.000.000</p>
+        </div>
+        
     </div>
 
+   
+
+    
     
 
 
