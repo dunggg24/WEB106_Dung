@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        .footer{
+            margin-top: 190px;
+        }
+    </style>
+
+    <script src="./script.js"></script>
+
+  <!--Menu-->
+  <script>
+    $(document).ready(function () {
+      $('#toggle').click(function () {
+        $('nav').slideToggle();
+      });
+    })
+  </script>
+  <div id="wrapper">
+    <div id="header">
+      <div id="toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav>
+        <ul id="main-menu">
+          <li>
+            <a href="Trangchu.html">DŨNG MOBILE</a>
+          </li>
+          <li>
+            <a href="">Iphone</a>
+          </li>
+          <li>
+            <a href="">Ipad</a>
+          </li>
+          <li>
+            <a href="">Macbook</a>
+          </li>
+          <li>
+            <a href="">Watch</a>
+          </li>
+          <li>
+            <a href="">Âm thanh</a>
+          </li>
+          <li>
+            <a href="">Phụ kiện</a>
+          </li>
+           
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+    <form id="LienHe">
+        <h3>Liên hệ</h3>
+		<label for="name">Họ tên:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="phone">Số điện thoại:</label>
+		<input type="text" id="phone" name="phone" required>
+
+		<label for="address">Địa chỉ cửa hàng:</label>
+		<textarea id="address" name="address" required></textarea>
+
+		<input type="submit" value="Gửi">
+	</form>
+
+    <section class="footer">
+        <div class="social">
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-snapchat"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100035786760328"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    
+        <ul class="list">
+          <li>
+            <a href="Trangchu.html">Trang chủ</a>
+          </li>
+          <li>
+            <a href="TinTuc.html">Tin tức</a>
+          </li>
+          <li>
+            <a href="LienHe.html">Liên hệ</a>
+          </li>
+          <li>
+            <a href="#">Bảo hành</a>
+          </li>
+          <li>
+            <a href="#">Địa chỉ</a>
+          </li>
+        </ul>
+        <p class="copyright">@Nguyễn Duy Dũng</p>
+      </section>
+</body>
+</html>
